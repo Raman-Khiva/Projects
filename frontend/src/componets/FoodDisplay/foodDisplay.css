@@ -1,0 +1,65 @@
+
+.food_display{
+    padding: 0 8rem;
+    margin: 3rem 0;
+
+    display: flex;
+    flex-direction:column;
+    gap: 2rem;
+
+
+
+}
+
+.food_display h3{
+    font-size: 1.8rem;
+}
+
+
+.food_display-list{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;
+}
+
+@media screen and (max-width:1200px){
+    .food_display{
+        padding: 0rem 4rem;
+        margin: 0;
+    }
+    
+}
+
+
+@media screen and (max-width:1024px){
+    .food_display-list{
+        gap: 1rem;
+    }
+}
+
+
+@media screen and (max-width:880px){
+
+    .food_display{
+        padding: 0 2rem;
+    }
+
+    .food_display-list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.8rem;
+    }
+
+
+    .food_display h3{
+        font-size: 1.7rem;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .food_display{
+        padding: 1rem;
+    }
+}

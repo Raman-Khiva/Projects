@@ -1,0 +1,133 @@
+header{
+    background-image: url('../../assets/header_img.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border-radius: 20px;
+    
+    height: 70vh;
+    /* width: 80%; */
+
+    margin:2rem 8rem;
+    padding: 2rem 3rem;
+
+    display: flex;
+    align-items: end;
+    justify-content: start;
+}
+
+.header-content{
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 2rem;
+    padding: 8rem 5rem 4rem 6rem;
+    font-family: sans-serif;
+
+    animation: fadeIn 4s ;
+}
+
+.header-content h2{
+    font-size: 3rem;
+    color: white;
+}
+
+.header-content p{
+    font-size: medium;
+    color: rgb(216, 214, 214);
+    font-weight: 500;
+}
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}
+
+@media screen and (max-width:1200px) {
+    header{
+        margin: 2rem 4rem;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    header{
+        justify-content: center;
+        align-items: center;
+    }
+    br{
+        display: none;
+    }
+    .header-content{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 3rem 4rem;
+    }
+}
+
+@media screen and (max-width:880px) {
+    
+    header{
+        padding: 1rem 2rem;
+        height: 50vh;
+        margin: 2rem 2rem;
+
+    }
+    .header-content{
+        padding: 2rem 3rem;
+    }
+
+    .header-content h2{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width:680px) {
+    
+    header{
+        padding: 1rem 2rem;
+        margin: 2rem 2rem;
+        width: calc(100vw - 4rem);
+        height: 40vh;
+        
+
+    }
+    .header-content{
+        padding: 2rem 3rem;
+    }
+
+    .header-content h2{
+        font-size: 1.5rem;
+        /* color: black; */
+    }
+    .header-content p{
+        font-size: 0.8rem;
+        /* color: black; */
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    header{
+        margin: 2rem 1rem;
+        width: calc(100vw - 2rem);
+    }
+
+    .header-content{
+        padding: 1rem 0;
+        
+    }
+
+    .header-content h2{
+        font-size: 1.3rem;
+    }
+}

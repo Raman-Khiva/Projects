@@ -1,0 +1,176 @@
+.food_item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* max-width: min-content; */
+    border-radius: 1rem;
+    overflow: hidden;
+
+    max-width: 16rem;
+
+    /* background-color: blue; */
+    box-shadow: 0 0 10px  #00000020;
+}
+
+.food_item-img_container{
+    position: relative;
+    width: 100%;
+    background-color: blue;
+
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.main_img{
+    width: 100%;
+}
+
+
+
+.food_item-counter{
+    position: absolute;
+    bottom: 6px;
+    right: 8px;
+
+    height: 35px;
+
+    display: flex;
+    align-items: center;
+}
+
+.food_item-counter img:hover{
+    cursor: pointer;
+}
+
+.food_item-counter-inner_div{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    background-color: white;
+    padding: 6px;
+    border-radius: 30px ;
+}
+
+
+.food_item-counter-inner_div img{
+    width: 23px;
+}
+.food_item-counter-inner_div img:hover{
+    cursor: pointer;
+}
+
+.food_item-counter-inner_div p{
+    font-size: large;
+    font-weight: 600;
+    color: rgb(93, 92, 92);
+}
+
+.add{
+    width: 32px;
+}
+
+
+
+
+.food_item-content{
+    padding: 1.4rem 1rem;
+    
+    display: flex;
+    flex-direction:column;
+    gap: 0.7rem;
+}
+
+.food_item-title_div{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+
+
+
+.food_item-title_div img{
+    width: 90px;
+}
+
+.food_item-content p{
+    font-size: 15px;
+    line-height: 18px;
+    color: rgb(117, 115, 115);
+}
+
+.food_item h4{
+    color: rgb(90, 89, 89);
+    font-size: large;
+}
+
+.food_item h3{
+    color: tomato;
+    font-size: large;
+}
+
+@media screen and (max-width:1024px) {
+    .food_item{
+        max-width: 13rem;
+    }
+}
+
+
+
+
+@media screen and (max-width:880px) {
+    .food_item-content{
+        gap: 0.4rem;
+        padding: 1rem 0.7rem;
+    }
+
+    .food_item-title_div img{
+        width: 70px;
+    }
+    
+    .food_item-content p{
+        font-size: 13px;
+        line-height: 16px;
+        color: rgb(117, 115, 115);
+    }
+    
+    .food_item h4{
+        color: rgb(90, 89, 89);
+        font-size: medium;
+    }
+    
+    .food_item h3{
+        color: tomato;
+        font-size: medium;
+    }
+
+    .food_item{
+        max-width: 10.5rem;
+    }
+     
+}
+
+@media screen  and (max-width: 480px){
+    .food_item{
+        flex-direction: row;
+        max-width: 100%;
+    }
+
+    .food_item-content h3{
+        font-size: 14px ;
+    }
+
+    .food_item-content h4{
+        font-size: small;
+    }
+
+    .food_item-content p{
+        font-size: 12px;
+        
+    }
+
+    
+}
